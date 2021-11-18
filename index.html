@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout page</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div>Checkout</div>
+      </header>
+
+      <main>
+        <div class="main__left">
+          <form class="checkout">
+            <div class="main__info">
+              <h1>Contact information</h1>
+              <div class="info">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="&#xf0e0; Enter your email..."
+                />
+              </div>
+              <div class="info">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="&#xf095; Enter your phone..."
+                />
+              </div>
+            </div>
+            <div class="main__shipping">
+              <h1>Shipping address</h1>
+              <div class="info">
+                <label for="name">Full name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="&#xf2bd; Rodney Cotton"
+                />
+              </div>
+              <div class="info">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="&#xf015; Your address.."
+                />
+              </div>
+              <div class="info">
+                <label for="city">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  placeholder="&#xf64f; Your city.."
+                />
+              </div>
+              <div class="main__shipping--bottom">
+                <div class="info">
+                  <label for="country">Country</label>
+                  <select name="countryName" id="country">
+                    <option value="" disabled selected>
+                      &#xf57c; Your country
+                    </option>
+                    <option value="1">Sweden</option>
+                    <option value="2">Norway</option>
+                    <option value="3">Finland</option>
+                  </select>
+                </div>
+                <div class="info">
+                  <label for="postal-code">Postal code</label>
+                  <input
+                    type="text"
+                    id="city"
+                    class="fontAwesome"
+                    placeholder="&#xf49e; Your postal code.."
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="main__save">
+              <input type="checkbox" id="save" />
+              <label for="save" class="strikethrough">
+                Save this information for next time
+              </label>
+            </div>
+            <div class="button">
+              <button>Continue</button>
+            </div>
+          </form>
+        </div>
+        <div class="main__right">
+          <div class="products">
+            <div class="product">
+              <img src="./photo1.png" alt="Backbag" />
+              <div class="product__info">
+                <div class="product__price">
+                  <h2>Vintage Backbag</h2>
+                  <p>$54.99 <span>$94.99</span></p>
+                </div>
+                <div class="product__add">
+                  <i class="fa fa-minus"></i>
+                  <p>1</p>
+                  <i class="fa fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./photo2.png" alt="Shoes" />
+              <div class="product__info">
+                <div class="product__price">
+                  <h2>Levi Shoes</h2>
+                  <p>$74.99 <span>$124.99</span></p>
+                </div>
+                <div class="product__add">
+                  <i class="fa fa-minus"></i>
+                  <p>1</p>
+                  <i class="fa fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment">
+            <div class="payment__shipping">
+              <div class="payment__text">Shipping</div>
+              <div class="payment__price">$19</div>
+            </div>
+            <div class="payment__total">
+              <div class="payment__text">Total</div>
+              <div class="payment__price">$148.98</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer__content">
+          created by <span>vutrana</span> - devChallenges.io
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
